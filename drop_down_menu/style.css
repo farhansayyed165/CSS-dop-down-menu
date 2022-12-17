@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=PT+Serif:wght@700&family=Roboto+Slab&family=Titillium+Web&display=swap');
+
+
+
+body {
+    
+	background: #212121;
+	font-size:22px;
+	line-height: 32px;
+	color: #ffb703;
+	word-wrap:break-word !important;
+	font-family: 'Titillium Web', sans-serif;;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #ffb703;
+}	
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #ffb703;
+}
+#text{
+    text-shadow:5px 2px 10px black;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    
+}
+#text::after{
+    content: " ";
+    position: absolute;
+	background: #212121;
+    background-image: url("film-photography-592347645-59e4d0609abed500119e7b14.jpg");
+    inset: 0;
+    opacity: 0.2;
+    z-index: -1;
+    mix-blend-mode: lighten;
+}
+
+h3 a {
+	color: #ffb703;
+}
+
+a {
+	color: #ffb703;
+}
+
+h1 {
+	margin-top: 50px;
+    padding-top: 10px;
+	text-align:center;
+	font-size:60px;
+	font-family: 'Bree Serif', 'serif';
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+    font-family: 'Titillium Web', sans-serif;;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+	margin: 10px 0;
+	background-color: #023047;
+
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #023047;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#ffb703;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
